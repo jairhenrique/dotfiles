@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+current_dir=${PWD}
+
+echo "Cleaning old files"
+rm ~/.zshrc
+rm ~/.vimrc
+rm ~/.gitconfig
+
+echo "Linking files"
+ln -s $current_dir/zshrc	~/.zshrc
+ln -s $current_dir/vimrc	~/.vimrc
+ln -s $current_dir/gitconfig	~/.gitconfig
+
+echo "Fuck Yeahhh!"
