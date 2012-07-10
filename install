@@ -8,8 +8,9 @@ rm ~/.vimrc
 rm ~/.gitconfig
 
 echo "Linking files"
-ln -s $current_dir/zshrc	~/.zshrc
-ln -s $current_dir/vimrc	~/.vimrc
-ln -s $current_dir/gitconfig	~/.gitconfig
+ln -s $current_dir/zshrc		~/.zshrc
+ln -s $current_dir/vimrc		~/.vimrc
+ln -s $current_dir/gitconfig		~/.gitconfig
+ln -s $current_dir/mytheme.zsh-theme	~/.oh-my-zsh/themes/mytheme.zsh-theme
 
 echo "Fuck Yeahhh!"
