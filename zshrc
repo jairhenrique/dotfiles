@@ -36,7 +36,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
-export LC_ALL=pt_BR.UTF-8
 export LANG=pt_BR.UTF-8
 export SVN_EDITOR=vim 
 export EDITOR=vim
