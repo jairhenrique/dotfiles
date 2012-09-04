@@ -1,5 +1,10 @@
 syntax on
 
+"identation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 "enable smartcase on search
 set ignorecase
 set smartcase

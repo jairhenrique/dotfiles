@@ -25,7 +25,7 @@ PROMPT='%{$fg[magenta]%}[%~] %{$reset_color%}'
 
 # The right-hand prompt
 
-RPROMPT='${time} %{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}$(git_prompt_status)%{$reset_color%}'
+RPROMPT='${time} %{$fg[yellow]%}$(~/.rvm/bin/rvm-prompt)%{$reset_color%} %{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}$(git_prompt_status)%{$reset_color%}'
 
 # Add this at the start of RPROMPT to include rvm info showing ruby-version@gemset-name
 # %{$fg[yellow]%}$(~/.rvm/bin/rvm-prompt)%{$reset_color%} 
@@ -42,10 +42,10 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭" # ⓣ
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ☀" # Ⓞ
 
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[cyan]%} ✚" # ⓐ ⑃
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ⚡"  # ⓜ ⑁
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ♺"  # ⓜ ⑁
 ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖" # ⓧ ⑂
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%} ➜" # ⓡ ⑄
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ♒" # ⓤ ⑊
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ⚒" # ⓤ ⑊
 
 # More symbols to choose from:
 # ☀ ✹ ☄ ♆ ♀ ♁ ♐ ♇ ♈ ♉ ♚ ♛ ♜ ♝ ♞ ♟ ♠ ♣ ⚢ ⚲ ⚳ ⚴ ⚥ ⚤ ⚦ ⚒ ⚑ ⚐ ♺ ♻ ♼ ☰ ☱ ☲ ☳ ☴ ☵ ☶ ☷
