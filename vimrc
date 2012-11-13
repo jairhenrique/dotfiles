@@ -1,9 +1,10 @@
 syntax on
 
 "identation
+set smartindent
+set tabstop=4
+set shiftwidth=4
 set expandtab
-set shiftwidth=2
-set softtabstop=2
 
 "enable smartcase on search
 set ignorecase
