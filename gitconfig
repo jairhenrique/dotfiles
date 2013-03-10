@@ -1,11 +1,16 @@
 [user]
     name = Jair Henrique
     email = jair.henrique@gmail.com
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    all = add -A
 [color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
+    ui = true
 [core]
     filemode = false
 [diff]
