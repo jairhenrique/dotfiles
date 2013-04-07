@@ -7,7 +7,7 @@
     br = branch
     co = checkout
     df = diff
-    lg = log -p
+    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
     all = add -A
 [color]
     ui = true
