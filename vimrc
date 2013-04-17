@@ -1,18 +1,37 @@
+set nocompatible
+
+" Turn off swap files
+set noswapfile
+set nobackup
+set nowb
+
+" Turn on syntax highlighting
 syntax on
 
-"identation
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+" General config
+set encoding=utf8
+set number                      "Line numbers are good
+set backspace=indent,eol,start  "Allow backspace in insert mode
+set history=1000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+set showmode                    "Show current mode down the bottom
+set autoread                    "Reload files changed outside vim
 
-"enable smartcase on search
+" Identation
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab    
+
+" Enable smartcase on search
 set ignorecase
 set smartcase
 
-set number "enable line numbers
-
 set paste
+set nowrap
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
