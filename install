@@ -6,6 +6,7 @@ echo "Cleaning old files"
 rm ~/.zshrc
 rm ~/.vimrc
 rm ~/.gitconfig
+rm ~/.oh-my-zsh/themes/mytheme.zsh-theme
 
 echo "Linking files"
 ln -s $current_dir/zshrc		~/.zshrc
