@@ -12,17 +12,18 @@ set __fish_git_prompt_char_stashstate ' ↩'
 set __fish_git_prompt_char_upstream_ahead ' ↑'
 set __fish_git_prompt_char_upstream_behind ' ↓'
 
-function my_prompt_pwd --description 'Print the current working directory'
+function my_prompt_pwd -d 'Print the current working directory'
   echo $PWD | sed -e "s|^$HOME|~|"
 end
 
 function fish_prompt
   set_color $fish_color_cwd
-  printf '%s' (my_prompt_pwd)
+  echo -n (my_prompt_pwd)
   set_color normal
- 
-  printf '%s ' (__fish_git_prompt)
+
+  echo (__fish_git_prompt)
   set_color normal
+  echo ' ⟩ '
 end
 
 function fish_right_prompt -d "Write out the right prompt"
