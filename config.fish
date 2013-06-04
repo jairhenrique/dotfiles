@@ -1,3 +1,6 @@
+# PATH
+set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin
+
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showstashstate 'yes'

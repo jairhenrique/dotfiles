@@ -11,13 +11,13 @@ rm -f ~/.zshrc
 rm -f ~/.vimrc
 rm -f ~/.gitconfig
 rm -f ~/.oh-my-zsh/themes/mytheme.zsh-theme
-rm -f ~/.config/fish/functions/fish_prompt.fish
+rm -f ~/.config/fish/config.fish
 
 echo "Linking files"
 ln -s $current_dir/zshrc		~/.zshrc
 ln -s $current_dir/vimrc		~/.vimrc
 ln -s $current_dir/gitconfig		~/.gitconfig
 ln -s $current_dir/mytheme.zsh-theme	~/.oh-my-zsh/themes/mytheme.zsh-theme
-ln -s $current_dir/fish_prompt.fish     ~/.config/fish/functions/fish_prompt.fish
+ln -s $current_dir/config.fish     ~/.config/fish/config.fish
 
 echo "Fuck Yeahhh!"
