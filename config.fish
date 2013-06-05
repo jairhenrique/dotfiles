@@ -1,5 +1,8 @@
 # PATH
-set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin
+set PATH /usr/local/bin
+set PATH $PATH /usr/local/sbin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin 
+set PATH $PATH /usr/local/share/npm/bin #npm
+
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
