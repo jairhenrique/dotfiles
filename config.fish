@@ -1,5 +1,6 @@
 # PATH
-set PATH /usr/local/bin
+set PATH $HOME/bin
+set PATH $PATH /usr/local/bin
 set PATH $PATH /usr/local/sbin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin 
 set PATH $PATH /usr/local/share/npm/bin #npm
 
