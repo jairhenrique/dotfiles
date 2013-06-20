@@ -13,6 +13,7 @@
     ui = true
 [core]
     filemode = false
+    editor = vim
 [diff]
     tool = diffmerge
 [difftool "diffmerge"]
