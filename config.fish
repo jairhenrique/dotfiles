@@ -3,6 +3,46 @@ set PATH /usr/local/bin $HOME/bin
 set PATH $PATH /usr/local/sbin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin 
 set PATH $PATH /usr/local/share/npm/bin #npm
 
+set PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
+
+set -xg JAVA_HOME (/usr/libexec/java_home)
+
+function rbenv_shell
+  set -l vers $argv[1]
+
+  switch "$vers"
+    case '--complete'
+      echo '--unset'
+      echo 'system'
+      exec rbenv-versions --bare
+      return
+    case '--unset'
+      set -e RBENV_VERSION
+    case ''
+      if [ -z "$RBENV_VERSION" ]
+        echo "rbenv: no shell-specific version configured" >&2
+        return 1
+      else
+        echo "$RBENV_VERSION"
+      end
+    case '*'
+      rbenv prefix "$vers" > /dev/null
+      set -g -x RBENV_VERSION "$vers"
+  end
+end
+
+function rbenv
+  set -l command $argv[1]
+  [ (count $argv) -gt 1 ]; and set -l args $argv[2..-1]
+
+  switch "$command"
+    case shell
+      rbenv_shell $args
+    case '*'
+      command rbenv $command $args
+  end
+end
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
