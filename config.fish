@@ -1,3 +1,9 @@
+#Virtualfish - python virtualenv
+set -g VIRTUALFISH_COMPAT_ALIASES
+. ~/dev/dotfiles/virtualfish/virtual.fish
+. ~/dev/dotfiles/virtualfish/auto_activation.fish
+. ~/dev/dotfiles/virtualfish/global_requirements.fish
+
 # PATH
 set PATH /usr/local/bin $HOME/bin
 set PATH $PATH /usr/local/sbin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin 
@@ -33,6 +39,12 @@ function fish_prompt
   set_color $fish_color_cwd
   echo -n (my_prompt_pwd)
   set_color normal
+
+  if set -q VIRTUAL_ENV
+    set_color yellow
+    echo -n  " ("(basename "$VIRTUAL_ENV")")"
+    set_color normal
+  end
 
   echo (__fish_git_prompt)
   set_color normal
