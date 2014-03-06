@@ -1,3 +1,5 @@
+set -x LC_ALL en_US.UTF-8
+
 #Virtualfish - python virtualenv
 set -g VIRTUALFISH_COMPAT_ALIASES
 . ~/dev/dotfiles/virtualfish/virtual.fish
